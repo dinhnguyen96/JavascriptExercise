@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hiển thị điểm trung bình</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .form-input{
+            margin: 0 0 20px 20px;
+        }
+        .form-content{
+            width: 330px;
+            margin: auto;
+        }
+    </style>
+</head>
+<body style="background-color: aqua">
+<form class="form-content" id="content">
+    <label>Nhập điểm vật lý </label>
+    <input type="number"  id="phyScore" class="form-input"/> <br>
+    <label>Nhập điểm hóa học</label>
+    <input type="number" id="chemScore" class="form-input" /> <br>
+    <label>Nhập điểm sinh học</label>
+    <input type="number"  id="bioScore" class="form-input" /> <br>
+    <label>Điểm trung bình</label>
+    <input type="number" id="averageScore" disabled class="form-input" /> <br>
+
+    <label>Tổng</label>
+    <input type="number" id="sum" disabled class="form-input" /> <br>
+
+    <button type="button" onclick="tinhTong()" class="form-control">Tổng</button>
+    <!--        <button type="reset" class="form-control">Nhập lại</button>-->
+
+</form>
+<script src="js/hienthidiemtb.js"></script>
+</body>
+</html>
