@@ -1,12 +1,21 @@
-function passwordCheck()
-{
-    let checkPassword = prompt("Nhập mật khẩu");
+function userCheck() {
+    let checkUsername = prompt("Nhập tên người dùng:");
 
-    if (checkPassword === "TheMaster")
+    if (checkUsername === "Admin")
     {
-        alert("Welcome!");
+        let checkPassword = prompt("Nhập mật khẩu: ");
+        if (checkPassword === "TheMaster")
+        {
+           alert("Welcome!");
+        }
+        else if (checkPassword === null) {
+            alert("Canceled!");
+        }
+        else {
+            alert("Wrong password!");
+        }
     }
-    else if (checkPassword === "null")
+    else if (checkUsername == null)
     {
         alert("Canceled!");
     }
@@ -15,4 +24,4 @@ function passwordCheck()
         alert("I don't know you!");
     }
 }
-passwordCheck();
+userCheck();
