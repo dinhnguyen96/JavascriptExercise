@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hiển thị phần tử</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .form-input{
+            margin: 0 0 20px 20px;
+        }
+        .form-content{
+            width: 330px;
+            margin: auto;
+        }
+    </style>
+</head>
+<body style="background-color: aqua">
+<form class="form-content" id="content">
+    <label>Sample Screen</label>
+    <input type="number" id="elementadd" class="form-input" /> <br>
+    <button type="button" id="add" onclick="elementAdd()">Add</button><br>
+    <button type="button" onclick="arrayDisplay()" >Display</button>
+</form>
+
+<p id ="resultDisplay"></p>
+<script src="arrayexercise/elementdisplay.js"></script>
+</body>
+</html>
